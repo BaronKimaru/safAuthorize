@@ -16,7 +16,7 @@ Ideally, you'd need to create an app by heading to [safaricom daraja 2.0 wesbite
 Consumer Key + ":" + Consumer Secret
 ```
 An example of a base64 encoded ctrsing can be generated from the bas64 website
-![image](https://github.com/BaronKimaru/safAuthorize/assets/16536231/3c363279-fa4c-42fd-96d8-b93d23e1f0c5)
+![image](![image](https://github.com/BaronKimaru/safAuthorize/assets/16536231/a6737a3d-1957-4872-b479-49960c3c09be))
 
 An example if using Python would be:
 ```
