@@ -22,13 +22,18 @@ An example if using Python would be:
 ```
 result = os.getenv("SAF_CONS_KEY") + ":" + os.getenv("SAF_CONS_SECRET")
 result_byte_data = result.encode('utf-8')
-print(f"result is: {result_byte_data}")
+result_encoded_data = base64.b64encode(result_byte_data)
+result_encoded_data_str = result_encoded_data.decode('utf-8')
 
 result_encoded_data = base64.b64encode(result_byte_data)
 api_URL = "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials"
-response = requests.get(
-     api_URL,
-     headers = { 'Authorization': f'Basic {result_encoded_data}' }
-)
+response = requests.request(
+            "GET", 
+            api_URL,
+            headers = {
+                'Authorization': f'Basic {result_encoded_data_str}'
+                }
+        )
 formatted_response = json.loads(response.text.encode('utf8'))
+token = formatted_response['access_token']
 ```
