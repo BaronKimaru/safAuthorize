@@ -7,7 +7,8 @@ Ideally, you'd need to create an app by heading to [safaricom daraja 2.0 wesbite
 
 ### Identify the consumer key and consumer secret
 * The App you created will generate the `consumer key` and `consumer secret` that you'll need to generate an Oauth access token necessary for authorizing requests.
-![Location of the two credentials](![image](https://github.com/BaronKimaru/safAuthorize/assets/16536231/b78687ce-e0d9-48bd-82c8-881fc4f46b59))
+![Location of the two credentials](![image](![image](https://github.com/BaronKimaru/safAuthorize/assets/16536231/86314dfb-5f85-4527-bc6f-5c476cada68e)
+))
 
 * The required string, i.e., the BasicAuth string, refers to a base64 encoded string of the two aforementoned credentials above.
   
